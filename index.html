@@ -46,18 +46,26 @@
                 </div>
             </div>
             <div class="contactForm">
-                <form>
+                <form action="https://formsubmit.co/turistiktavsiyeler@gmail.com" method="POST">
+                    <!-- Honeypot -->
+                    <input type="text" name="_honey" style="display: none;">
+
+                    <!-- Disable Captcha -->
+                    <input type="hidden" name="_captcha" value="false" >
+
+                    <input type="hidden" name="next" value="https://m-budak.github.io/contact-us-page/success.html">
+
                     <h2>Send Message</h2>
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
+                        <input type="text" name="Name" required="required">
                         <span>Full Name</span>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
+                        <input type="text" name="Email" required="required">
                         <span>E-Mail</span>
                     </div>
                     <div class="inputBox">
-                        <textarea required="required"></textarea>
+                        <textarea name="Message" required="required"></textarea>
                         <span>Type Your Message...</span>
                     </div>
                     <div class="inputBox">
