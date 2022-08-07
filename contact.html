@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,1,0" />
     
     
@@ -19,7 +19,7 @@
   <body>
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-              <a class="navbar-brand ms-2" href="#">
+              <a class="navbar-brand ms-2" href="index.html">
                 <img src="/img/logoo.png" style="height: 50px; width: 82px;" alt="">
               </a>
               <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +59,7 @@
                 <div class="offcanvas-body">
                   <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                      <a class="nav-link" aria-current="page" href="index.html" >Home</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Excursion</a>
@@ -103,17 +103,19 @@
                 
                 </div>
               </div>  
+            
+              
             </div>
           </nav>
 
 <!-- Header Ends -->
 
-    <section class="contact">
-        <div class="content">
+    <div class="contact pt-5">
+        <div class="content pt-5 mt-5">
             <h2>Contact Us</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptatibus quae doloribus, velit, pariatur aliquid reiciendis ea maiores officia delectus excepturi, voluptate alias molestias omnis sapiente dolorum!</p>
         </div>
-        <div class="container">
+        <div class="container" id="container">
             <div class="contactinfo">
                     <div class="box">
                     <a href="https://www.google.com/maps/dir//Anex+Tour,+Barbaros+Serik+Cad+No+305+A,+D:1,+07112+Aksu%2FAntalya/@36.9457811,30.8630575,16.5z/data=!4m17!1m7!3m6!1s0x14c3815c1f3bfcaf:0xb94a804ed1197635!2sAnex+Tour!8m2!3d36.9467469!4d30.8659538!15sChFhbmV4IHRvdXIgYW50YWx5YSIDiAEBWhMiEWFuZXggdG91ciBhbnRhbHlhkgENdHJhdmVsX2FnZW5jeQ!4m8!1m0!1m5!1m1!1s0x14c3815c1f3bfcaf:0xb94a804ed1197635!2m2!1d30.8659538!2d36.9467469!3e2"  target="_blank" style="text-decoration: none; color: #000" >
@@ -149,117 +151,138 @@
                         </div>
                     </div>
                 </div>
-            <div class="successBox">
-                <div class="sicon"><span class="material-symbols-outlined">
-                    task_alt
-                    </span> 
-                    <br><h2>Success!</h2>
-                   </div>
+            <div class="contactForm">
+              <form action="https://formsubmit.co/deneme.mbudak@gmail.com" method="POST">
+                    <!-- Honeypot -->
+                    <input type="text" name="_honey" style="display: none;">
+
+                    <!-- Disable Captcha -->
+                    <input type="hidden" name="_captcha" value="false" >
+
+                    <input type="hidden" name="_next" value="https://m-budak.github.io/contact-us-page/success.html"> <!--Unutma-->
+
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="Name" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="Email" required="required">
+                        <span>E-Mail</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="Message" required="required"></textarea>
+                        <span>Type Your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
             </div>
         </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    </div>
+
 <!-- Footer Starts -->
 
 <div class="bg-danger">
-    <footer class="py-3">
-      <br>
-      <a href="https://www.instagram.com/excursionpartner/?igshid=YmMyMTA2M2Y="
-      target="_blank" class="position-absolute start-50 translate-middle" style="text-decoration:none; color: white;"> <button style="background-color:transparent; border: none; font-size: 50px;"> <i class="fa-brands fa-instagram"></i></button> </a>
-      <br>
-      <br> 
-      <a href="https://www.instagram.com/excursionpartner/?igshid=YmMyMTA2M2Y="  target="_blank" class="position-absolute start-50 translate-middle" style="text-decoration: none; color: white;">Excursion Partner</a>
-      <br>
-      
+  <footer class="py-3">
+    <br>
+    <a href="https://www.instagram.com/excursionpartner/?igshid=YmMyMTA2M2Y="
+    target="_blank" class="position-absolute start-50 translate-middle" style="text-decoration:none; color: white;"> <button style="background-color:transparent; border: none; font-size: 50px;"> <i class="fa-brands fa-instagram"></i></button> </a>
+    <br>
+    <br> 
+    <a href="https://www.instagram.com/excursionpartner/?igshid=YmMyMTA2M2Y="  target="_blank" class="position-absolute start-50 translate-middle" style="text-decoration: none; color: white;">Excursion Partner</a>
+    <br>
+    
 
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-light">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Excursion</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Categories</a></li>
-        <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-light">Contact</a></li>
-      </ul>
-      <p class="text-center text-light">© 2022 Excursion Partner</p>
-    </footer>
-  </div>
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-light">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Excursion</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Categories</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-light">Contact</a></li>
+    </ul>
+    <p class="text-center text-light">© 2022 Excursion Partner</p>
+  </footer>
+</div>
 
 
 <script>
-    window.addEventListener('scroll', function() {
-        let nav = document.querySelector('nav');
-        let windowPosition = window.scrollY > 0;
-        nav.classList.toggle('scrolling-active', windowPosition);
-    })
+  window.addEventListener('scroll', function() {
+      let nav = document.querySelector('nav');
+      let windowPosition = window.scrollY > 0;
+      nav.classList.toggle('scrolling-active', windowPosition);
+  })
 
-    // GRAP AND SCROLL
-    // document.addEventListener('DOMContentLoaded', function () {
-    //         const ele = document.getElementById('scrollAble');
-    //         ele.style.cursor = 'grab';
+  // GRAP AND SCROLL
+  // document.addEventListener('DOMContentLoaded', function () {
+  //         const ele = document.getElementById('scrollAble');
+  //         ele.style.cursor = 'grab';
 
-    //         let pos = { top: 0, left: 0, x: 0, y: 0 };
+  //         let pos = { top: 0, left: 0, x: 0, y: 0 };
 
-    //         const mouseDownHandler = function (e) {
-    //             ele.style.cursor = 'grabbing';
-    //             ele.style.userSelect = 'none';
+  //         const mouseDownHandler = function (e) {
+  //             ele.style.cursor = 'grabbing';
+  //             ele.style.userSelect = 'none';
 
-    //             pos = {
-    //                 left: ele.scrollLeft,
-    //                 top: ele.scrollTop,
-    //                 // Get the current mouse position
-    //                 x: e.clientX,
-    //                 y: e.clientY,
-    //             };
+  //             pos = {
+  //                 left: ele.scrollLeft,
+  //                 top: ele.scrollTop,
+  //                 // Get the current mouse position
+  //                 x: e.clientX,
+  //                 y: e.clientY,
+  //             };
 
-    //             document.addEventListener('mousemove', mouseMoveHandler);
-    //             document.addEventListener('mouseup', mouseUpHandler);
-    //         };
+  //             document.addEventListener('mousemove', mouseMoveHandler);
+  //             document.addEventListener('mouseup', mouseUpHandler);
+  //         };
 
-    //         const mouseMoveHandler = function (e) {
-    //             // How far the mouse has been moved
-    //             const dx = e.clientX - pos.x;
-    //             const dy = e.clientY - pos.y;
-                
+  //         const mouseMoveHandler = function (e) {
+  //             // How far the mouse has been moved
+  //             const dx = e.clientX - pos.x;
+  //             const dy = e.clientY - pos.y;
+              
 
-    //             // Scroll the element
-    //             ele.scrollTop = pos.top - dy;
-    //             ele.scrollLeft = pos.left - dx;
-    //         };
+  //             // Scroll the element
+  //             ele.scrollTop = pos.top - dy;
+  //             ele.scrollLeft = pos.left - dx;
+  //         };
 
-    //         const mouseUpHandler = function () {
-    //             ele.style.cursor = 'grab';
-    //             ele.style.removeProperty('user-select');
+  //         const mouseUpHandler = function () {
+  //             ele.style.cursor = 'grab';
+  //             ele.style.removeProperty('user-select');
 
-    //             document.removeEventListener('mousemove', mouseMoveHandler);
-    //             document.removeEventListener('mouseup', mouseUpHandler);
-    //         };
+  //             document.removeEventListener('mousemove', mouseMoveHandler);
+  //             document.removeEventListener('mouseup', mouseUpHandler);
+  //         };
 
-    //         // Attach the handler
-    //         ele.addEventListener('mousedown', mouseDownHandler);
-          
-            
+  //         // Attach the handler
+  //         ele.addEventListener('mousedown', mouseDownHandler);
+        
           
         
-    //     });
-  
+      
+  //     });
+
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script>
-  $(document).ready(function() {
-    // $(".trwpwhatsappballon").hide(1000,callback);
-    $("#ackapa").click(function() {
-    
-    $(".trwpwhatsappballon").toggle(2000);
-    
+$(document).ready(function() {
+  // $(".trwpwhatsappballon").hide(1000,callback);
+  $("#ackapa").click(function() {
   
-    });
-    $("#kapatac").click(function() {
-    
-    $(".trwpwhatsappballon").toggle(2000);
-    
-    });
-    
-    
-    });
-    
+  $(".trwpwhatsappballon").toggle(2000);
+  
+
+  });
+  $("#kapatac").click(function() {
+  
+  $(".trwpwhatsappballon").toggle(2000);
+  
+  });
+  
+  
+  });
+  
 </script>
 
 
